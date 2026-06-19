@@ -27,7 +27,6 @@ color:#d4af37;
 }
 
 
-
 @keyframes float{
 
 50%{
@@ -40,26 +39,19 @@ transform:translateY(-15px);
 @keyframes fade{
 
 from{
-
 opacity:0;
 transform:translateY(40px);
-
 }
 
 to{
-
 opacity:1;
 transform:translateY(0);
-
 }
 
 }
 
 
-
-
-
-/* AI LOGO WITH FACE */
+/* LOGO */
 
 
 .logo{
@@ -72,18 +64,12 @@ gap:25px;
 }
 
 
-
 .logo-text{
 
 font-size:90px;
-
 font-weight:900;
-
 letter-spacing:8px;
-
-text-shadow:
-
-0 0 35px #d4af37;
+text-shadow:0 0 35px #d4af37;
 
 }
 
@@ -92,27 +78,16 @@ text-shadow:
 .ai-icon{
 
 width:100px;
-
 height:100px;
-
 border:4px solid #d4af37;
-
 border-radius:30px;
-
 position:relative;
-
-box-shadow:
-
-0 0 40px #d4af37;
-
+box-shadow:0 0 40px #d4af37;
 animation:float 3s infinite;
 
 }
 
 
-
-
-/* eyes */
 
 .ai-icon:before{
 
@@ -121,26 +96,20 @@ content:"";
 position:absolute;
 
 top:30px;
-
 left:22px;
 
 width:14px;
-
 height:14px;
 
 background:#d4af37;
 
 border-radius:50%;
 
-box-shadow:
-
-42px 0 #d4af37;
+box-shadow:42px 0 #d4af37;
 
 }
 
 
-
-/* smile */
 
 .ai-icon:after{
 
@@ -148,7 +117,7 @@ content:"";
 
 position:absolute;
 
-bottom:22px;
+bottom:20px;
 
 left:30px;
 
@@ -164,13 +133,11 @@ border-radius:50%;
 
 
 
-
 .ai-icon span{
 
 position:absolute;
 
 width:8px;
-
 height:8px;
 
 background:#d4af37;
@@ -180,36 +147,27 @@ border-radius:50%;
 }
 
 
-
 .ai-icon span:nth-child(1){
 
 top:-12px;
-
 left:46px;
 
 }
 
-
 .ai-icon span:nth-child(2){
 
 left:-12px;
-
 top:45px;
 
 }
-
 
 
 .ai-icon span:nth-child(3){
 
 right:-12px;
-
 top:45px;
 
 }
-
-
-
 
 
 
@@ -236,7 +194,7 @@ animation:fade 1.5s;
 
 
 
-header h1{
+h1{
 
 font-size:55px;
 
@@ -250,9 +208,9 @@ header p{
 
 font-size:25px;
 
-margin-top:25px;
-
 color:#ddd;
+
+margin-top:25px;
 
 line-height:1.5;
 
@@ -287,7 +245,6 @@ transition:.3s;
 }
 
 
-
 .button:hover{
 
 background:white;
@@ -295,8 +252,6 @@ background:white;
 transform:scale(1.1);
 
 }
-
-
 
 
 
@@ -318,7 +273,23 @@ h2{
 
 font-size:45px;
 
-margin-bottom:50px;
+margin-bottom:45px;
+
+}
+
+
+
+.text{
+
+max-width:900px;
+
+margin:auto;
+
+color:#ddd;
+
+font-size:20px;
+
+line-height:1.7;
 
 }
 
@@ -335,7 +306,6 @@ flex-wrap:wrap;
 gap:30px;
 
 }
-
 
 
 
@@ -379,11 +349,55 @@ box-shadow:0 0 35px #d4af37;
 
 .card p{
 
-margin-top:18px;
+margin-top:15px;
 
 color:#ddd;
 
 line-height:1.6;
+
+}
+
+
+
+
+/* SKILLS */
+
+
+.skill{
+
+max-width:700px;
+
+margin:25px auto;
+
+text-align:left;
+
+color:white;
+
+}
+
+
+
+.bar{
+
+height:18px;
+
+background:#222;
+
+border-radius:20px;
+
+margin-top:10px;
+
+}
+
+
+
+.fill{
+
+height:100%;
+
+background:#d4af37;
+
+border-radius:20px;
 
 }
 
@@ -452,7 +466,6 @@ box-shadow:28px 0 #d4af37;
 
 
 
-
 .chat-logo:after{
 
 content:"";
@@ -472,7 +485,6 @@ border-bottom:3px solid #d4af37;
 border-radius:50%;
 
 }
-
 
 
 
@@ -496,8 +508,6 @@ border-radius:30px;
 
 
 
-
-
 .chat{
 
 display:none;
@@ -518,10 +528,9 @@ border-radius:25px;
 
 padding:20px;
 
-z-index:5;
+z-index:10;
 
 }
-
 
 
 
@@ -567,10 +576,6 @@ color:white;
 
 
 
-
-
-
-
 /* FORM */
 
 
@@ -605,12 +610,12 @@ border-radius:15px;
 }
 
 
+
 textarea{
 
 height:150px;
 
 }
-
 
 
 
@@ -623,14 +628,14 @@ text-align:center;
 }
 
 
+
 </style>
+
 
 </head>
 
 
-
 <body>
-
 
 
 
@@ -641,7 +646,6 @@ text-align:center;
 
 
 <div class="logo">
-
 
 <div class="ai-icon">
 
@@ -663,7 +667,6 @@ AI
 
 
 
-
 <h1>
 
 AI CHATBOTS & PREMIUM WEBSITES
@@ -671,20 +674,19 @@ AI CHATBOTS & PREMIUM WEBSITES
 </h1>
 
 
+
 <p>
 
-Building intelligent AI assistants and modern websites that help companies grow, save time and create better customer experiences.
+Creating intelligent digital solutions that help businesses grow, automate communication and build a stronger online presence.
 
 </p>
 
 
-
-<a class="button" href="#contact">
+<a href="#contact" class="button">
 
 Create Your AI Solution
 
 </a>
-
 
 
 </div>
@@ -702,10 +704,108 @@ Create Your AI Solution
 
 <h2>
 
-Why Businesses Choose AI
+About My Work
 
 </h2>
 
+
+<p class="text">
+
+I create modern AI-powered solutions for businesses that want to improve customer experience and work more efficiently. My focus is combining premium website design with intelligent chatbot technology to create digital experiences that are simple, professional and effective.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+
+My Skills
+
+</h2>
+
+
+
+<div class="skill">
+
+Website Design & Development
+
+<div class="bar">
+
+<div class="fill" style="width:95%"></div>
+
+</div>
+
+</div>
+
+
+
+<div class="skill">
+
+AI Chatbot Creation
+
+<div class="bar">
+
+<div class="fill" style="width:90%"></div>
+
+</div>
+
+</div>
+
+
+
+<div class="skill">
+
+Modern UI & User Experience
+
+<div class="bar">
+
+<div class="fill" style="width:95%"></div>
+
+</div>
+
+</div>
+
+
+
+<div class="skill">
+
+Business Digital Solutions
+
+<div class="bar">
+
+<div class="fill" style="width:85%"></div>
+
+</div>
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section>
+
+
+<h2>
+
+My Services
+
+</h2>
 
 
 <div class="cards">
@@ -715,13 +815,13 @@ Why Businesses Choose AI
 
 <h3>
 
-24/7 Customer Support
+AI Chatbots 🤖
 
 </h3>
 
 <p>
 
-Your customers receive instant answers anytime without waiting for a human response.
+Smart assistants that answer customer questions, support visitors and improve communication.
 
 </p>
 
@@ -729,18 +829,17 @@ Your customers receive instant answers anytime without waiting for a human respo
 
 
 
-
 <div class="card">
 
 <h3>
 
-Save Valuable Time
+Premium Websites 🌐
 
 </h3>
 
 <p>
 
-Automate repeated questions and let AI handle everyday communication.
+Professional websites designed to represent brands and convert visitors into customers.
 
 </p>
 
@@ -748,18 +847,17 @@ Automate repeated questions and let AI handle everyday communication.
 
 
 
-
 <div class="card">
 
 <h3>
 
-Professional Experience
+Complete Solutions 🚀
 
 </h3>
 
 <p>
 
-Give visitors a modern and intelligent experience that builds trust.
+Modern digital systems created for companies, startups and personal brands.
 
 </p>
 
@@ -782,9 +880,10 @@ Give visitors a modern and intelligent experience that builds trust.
 
 <h2>
 
-What AIVA Can Do
+Why Choose My Solutions?
 
 </h2>
+
 
 
 <div class="cards">
@@ -794,13 +893,13 @@ What AIVA Can Do
 
 <h3>
 
-Smart Conversations
+Modern Technology
 
 </h3>
 
 <p>
 
-AIVA answers questions, explains services and guides customers.
+Using AI and modern design to create future-ready businesses.
 
 </p>
 
@@ -812,13 +911,13 @@ AIVA answers questions, explains services and guides customers.
 
 <h3>
 
-Business Assistant
+Customer Focus
 
 </h3>
 
 <p>
 
-Help customers understand your offers and start projects.
+Every project is created around the goals and needs of the company.
 
 </p>
 
@@ -830,25 +929,23 @@ Help customers understand your offers and start projects.
 
 <h3>
 
-Website Integration
+Professional Quality
 
 </h3>
 
 <p>
 
-Create a modern website combined with powerful AI features.
+Clean design, strong branding and easy experiences.
 
 </p>
 
 </div>
-
 
 
 </div>
 
 
 </section>
-
 
 
 
@@ -866,6 +963,7 @@ Start Your Project
 </h2>
 
 
+
 <form action="https://formspree.io/f/mgobgzye" method="POST">
 
 
@@ -875,7 +973,8 @@ Start Your Project
 <input name="email" placeholder="Your Email">
 
 
-<textarea name="request" placeholder="Tell me about your idea"></textarea>
+<textarea name="request" placeholder="Tell me about your project"></textarea>
+
 
 
 <button class="button">
@@ -904,13 +1003,11 @@ Ask AIVA 🤖
 
 
 
-
 <div class="bot" onclick="openAI()">
 
 <div class="chat-logo"></div>
 
 </div>
-
 
 
 
@@ -927,8 +1024,8 @@ AIVA AI Assistant
 </h3>
 
 
-
 <div id="messages">
+
 
 <p>
 
@@ -936,12 +1033,11 @@ AIVA: Hello 👋 I help with AI chatbots, websites and digital solutions.
 
 </p>
 
+
 </div>
 
 
-
-
-<input id="input" placeholder="Ask me anything...">
+<input id="input" placeholder="Ask me...">
 
 
 <button class="button" onclick="send()">
@@ -978,8 +1074,8 @@ let input=document.getElementById("input");
 let q=input.value.toLowerCase();
 
 
-
 let box=document.getElementById("messages");
+
 
 box.innerHTML += "<p>You: "+input.value+"</p>";
 
@@ -991,42 +1087,33 @@ let answer="";
 
 if(q.includes("chatbot")){
 
-answer="AI chatbots help businesses by answering customers, giving support and creating better communication.";
+answer="AI chatbots help businesses answer customers, automate support and improve communication.";
 
 }
-
-
 
 else if(q.includes("website")){
 
-answer="We create premium websites with modern design and AI features for companies.";
+answer="We create premium websites for companies, brands and businesses.";
 
 }
-
-
 
 else if(q.includes("price")){
 
-answer="Every project is different. Send your idea and we create a custom solution.";
+answer="Every project is unique. Send your idea through the project form.";
 
 }
-
-
 
 else if(q.includes("company")){
 
-answer="Our solutions work for restaurants, shops, startups, coaches and many other businesses.";
+answer="Our solutions are made for restaurants, shops, startups, coaches and many businesses.";
 
 }
-
-
 
 else{
 
-answer="I focus only on AI chatbots, websites and digital solutions. Ask me about those topics.";
+answer="I focus only on AI chatbots, websites and digital solutions.";
 
 }
-
 
 
 
@@ -1045,8 +1132,6 @@ input.value="";
 
 
 </script>
-
-
 
 
 
