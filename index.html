@@ -6,10 +6,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AI Chatbots & Premium Websites</title>
+<title>AI Chatbots and Premium Websites</title>
 
 
 <style>
+
 
 *{
 margin:0;
@@ -28,32 +29,30 @@ color:#d4af37;
 
 
 
-/* ANIMATION */
-
-
-@keyframes float{
-
-50%{
-transform:translateY(-15px);
-}
-
-}
-
 
 @keyframes fade{
 
 from{
-
 opacity:0;
 transform:translateY(40px);
-
 }
 
 to{
-
 opacity:1;
 transform:translateY(0);
+}
 
+}
+
+
+@keyframes float{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-15px);
 }
 
 }
@@ -68,8 +67,11 @@ transform:translateY(0);
 .logo{
 
 display:flex;
+
 justify-content:center;
+
 align-items:center;
+
 gap:20px;
 
 }
@@ -78,23 +80,23 @@ gap:20px;
 
 .logo-text{
 
-font-size:90px;
+font-size:80px;
+
 font-weight:900;
-letter-spacing:10px;
 
-text-shadow:
+letter-spacing:8px;
 
-0 0 25px #d4af37;
+text-shadow:0 0 30px #d4af37;
 
 }
 
 
 
-
 .ai-icon{
 
-width:90px;
-height:90px;
+width:85px;
+
+height:85px;
 
 border:4px solid #d4af37;
 
@@ -102,9 +104,7 @@ border-radius:25px;
 
 position:relative;
 
-box-shadow:
-
-0 0 35px #d4af37;
+box-shadow:0 0 30px #d4af37;
 
 animation:float 3s infinite;
 
@@ -119,18 +119,18 @@ content:"";
 position:absolute;
 
 top:25px;
+
 left:18px;
 
 width:12px;
+
 height:12px;
 
 background:#d4af37;
 
 border-radius:50%;
 
-box-shadow:
-
-35px 0 #d4af37;
+box-shadow:35px 0 #d4af37;
 
 }
 
@@ -156,13 +156,12 @@ border-bottom:3px solid #d4af37;
 
 
 
-
-
 .ai-icon span{
 
 position:absolute;
 
 width:8px;
+
 height:8px;
 
 background:#d4af37;
@@ -200,6 +199,8 @@ top:40px;
 
 
 
+
+
 /* HERO */
 
 
@@ -223,11 +224,11 @@ animation:fade 1.5s;
 
 
 
-h1{
+header h1{
 
-font-size:50px;
+font-size:45px;
 
-margin-top:35px;
+margin-top:30px;
 
 }
 
@@ -235,13 +236,13 @@ margin-top:35px;
 
 header p{
 
-font-size:23px;
+font-size:22px;
 
-margin-top:25px;
-
-color:#ddd;
+margin-top:20px;
 
 }
+
+
 
 
 
@@ -249,9 +250,9 @@ color:#ddd;
 
 display:inline-block;
 
-margin-top:70px;
+margin-top:40px;
 
-padding:18px 50px;
+padding:18px 45px;
 
 background:#d4af37;
 
@@ -261,13 +262,13 @@ border-radius:50px;
 
 font-weight:bold;
 
-border:none;
+text-decoration:none;
 
 cursor:pointer;
 
-text-decoration:none;
-
 transition:.3s;
+
+border:none;
 
 }
 
@@ -285,14 +286,12 @@ transform:scale(1.1);
 
 
 
-
-
 /* SECTIONS */
 
 
 section{
 
-padding:90px 20px;
+padding:80px 20px;
 
 text-align:center;
 
@@ -311,23 +310,24 @@ margin-bottom:50px;
 
 
 
-.cards{
+.examples{
 
 display:flex;
 
-justify-content:center;
-
 flex-wrap:wrap;
 
-gap:30px;
+justify-content:center;
+
+gap:35px;
 
 }
 
 
 
+
 .card{
 
-width:310px;
+width:320px;
 
 height:220px;
 
@@ -336,8 +336,6 @@ background:#111;
 border:1px solid #d4af37;
 
 border-radius:25px;
-
-padding:25px;
 
 display:flex;
 
@@ -357,7 +355,7 @@ transition:.4s;
 
 transform:translateY(-15px);
 
-box-shadow:0 0 35px #d4af37;
+box-shadow:0 0 30px #d4af37;
 
 }
 
@@ -365,11 +363,12 @@ box-shadow:0 0 35px #d4af37;
 
 .card p{
 
-color:#ddd;
-
 margin-top:15px;
 
+color:#ddd;
+
 }
+
 
 
 
@@ -380,7 +379,7 @@ margin-top:15px;
 
 .skill{
 
-max-width:700px;
+max-width:600px;
 
 margin:25px auto;
 
@@ -445,9 +444,9 @@ background:#111;
 
 border:1px solid #d4af37;
 
-color:white;
-
 border-radius:15px;
+
+color:white;
 
 }
 
@@ -463,9 +462,7 @@ height:150px;
 
 
 
-
-
-/* AIVA */
+/* AIVA BOT */
 
 
 .bot{
@@ -531,7 +528,7 @@ box-shadow:25px 0 #d4af37;
 
 position:fixed;
 
-left:95px;
+left:100px;
 
 bottom:95px;
 
@@ -544,8 +541,6 @@ padding:15px 25px;
 border-radius:30px;
 
 }
-
-
 
 
 
@@ -569,10 +564,9 @@ border-radius:25px;
 
 padding:20px;
 
-box-shadow:0 0 30px #d4af37;
+z-index:10;
 
 }
-
 
 
 
@@ -590,13 +584,13 @@ overflow:auto;
 
 background:#222;
 
+color:white;
+
 padding:10px;
 
 border-radius:15px;
 
 margin:10px 0;
-
-color:white;
 
 }
 
@@ -606,9 +600,9 @@ color:white;
 
 width:100%;
 
-margin-top:15px;
-
 padding:15px;
+
+margin-top:10px;
 
 background:#111;
 
@@ -622,7 +616,7 @@ color:white;
 
 footer{
 
-padding:40px;
+padding:30px;
 
 text-align:center;
 
@@ -637,6 +631,7 @@ text-align:center;
 
 
 <body>
+
 
 
 
@@ -671,30 +666,31 @@ AI
 
 
 
+
 <h1>
 
-AI CHATBOTS & PREMIUM WEBSITES
+AI CHATBOTS AND PREMIUM WEBSITES
 
 </h1>
 
 
 <p>
 
-Creating intelligent assistants and modern websites for every business.
+Smart AI Chatbots & Professional Websites For Every Business
 
 </p>
 
 
 
-<a class="button" href="#contact">
+<a class="button" href="#order">
 
-Start Your Project
+Create My Website
 
 </a>
 
 
-</div>
 
+</div>
 
 </header>
 
@@ -709,23 +705,21 @@ Start Your Project
 
 <h2>
 
-Our Services
+Websites I Create
 
 </h2>
 
 
+<div class="examples">
 
-<div class="cards">
 
 
 <div class="card">
 
-<h3>AI Chatbots 🤖</h3>
+<h3>Restaurant Websites</h3>
 
 <p>
-
-Customer support, answers and smart automation.
-
+Menus, bookings & customer experiences
 </p>
 
 </div>
@@ -734,26 +728,62 @@ Customer support, answers and smart automation.
 
 <div class="card">
 
-<h3>Premium Websites 🌐</h3>
+<h3>Business Websites</h3>
 
 <p>
-
-Modern websites that build trust.
-
+Professional company websites
 </p>
 
 </div>
+
 
 
 
 <div class="card">
 
-<h3>Digital Solutions 🚀</h3>
+<h3>Fitness Websites</h3>
 
 <p>
+Modern platforms for coaches
+</p>
 
-Technology for business growth.
+</div>
 
+
+
+
+<div class="card">
+
+<h3>E-Commerce</h3>
+
+<p>
+Online shops that sell
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Real Estate</h3>
+
+<p>
+Luxury property websites
+</p>
+
+</div>
+
+
+
+
+<div class="card">
+
+<h3>Portfolio Websites</h3>
+
+<p>
+Creative personal brands
 </p>
 
 </div>
@@ -761,9 +791,9 @@ Technology for business growth.
 
 
 </div>
-
 
 </section>
+
 
 
 
@@ -776,51 +806,43 @@ Technology for business growth.
 
 <h2>
 
-For Every Company
+Why Choose My Services?
 
 </h2>
 
 
 
-<div class="cards">
+<div class="examples">
 
 
 <div class="card">
 
-<h3>Restaurants</h3>
+<h3>AI Automation</h3>
 
 <p>
-
-Menus, bookings and customer help.
-
+Save time with intelligent assistants
 </p>
 
 </div>
 
 
-
 <div class="card">
 
-<h3>Online Shops</h3>
+<h3>Modern Design</h3>
 
 <p>
-
-Modern shopping experiences.
-
+Premium websites that impress customers
 </p>
 
 </div>
 
 
-
 <div class="card">
 
-<h3>Startups</h3>
+<h3>Every Business</h3>
 
 <p>
-
-Professional digital presence.
-
+Solutions for companies of all sizes
 </p>
 
 </div>
@@ -830,6 +852,8 @@ Professional digital presence.
 
 
 </section>
+
+
 
 
 
@@ -847,7 +871,6 @@ My Skills
 </h2>
 
 
-
 <div class="skill">
 
 Website Design
@@ -859,7 +882,6 @@ Website Design
 </div>
 
 </div>
-
 
 
 
@@ -877,6 +899,18 @@ AI Chatbot Development
 
 
 
+<div class="skill">
+
+UI & User Experience
+
+<div class="bar">
+
+<div class="fill" style="width:95%"></div>
+
+</div>
+
+</div>
+
 
 </section>
 
@@ -885,12 +919,13 @@ AI Chatbot Development
 
 
 
-<section id="contact">
+
+<section id="order">
 
 
 <h2>
 
-Create Your Project
+Order Your Website Or Chatbot
 
 </h2>
 
@@ -905,7 +940,7 @@ Create Your Project
 <input name="email" placeholder="Your Email">
 
 
-<textarea name="request" placeholder="Your idea"></textarea>
+<textarea name="request" placeholder="Tell me your idea"></textarea>
 
 
 
@@ -927,6 +962,7 @@ Send Request
 
 
 
+
 <div class="bubble">
 
 Ask AIVA 🤖
@@ -935,12 +971,9 @@ Ask AIVA 🤖
 
 
 
-
 <div class="bot" onclick="openAI()">
 
-
 <div class="chat-logo"></div>
-
 
 </div>
 
@@ -959,13 +992,10 @@ AIVA AI Assistant
 </h3>
 
 
-
 <div id="messages">
 
 <p>
-
-AIVA: Hello 👋 I help with AI chatbots, websites and digital solutions.
-
+AIVA: Hello 👋 I can help you with AI chatbots, websites and projects.
 </p>
 
 </div>
@@ -989,13 +1019,10 @@ Send
 
 
 
-
-
 <script>
 
 
 let memory=[];
-
 
 
 function openAI(){
@@ -1006,13 +1033,14 @@ document.getElementById("chat").style.display="block";
 
 
 
+
+
 function send(){
 
 
 let input=document.getElementById("input");
 
-let text=input.value.trim();
-
+let text=input.value;
 
 
 if(!text)return;
@@ -1022,10 +1050,7 @@ if(!text)return;
 let box=document.getElementById("messages");
 
 
-
-box.innerHTML +=
-
-"<p>You: "+text+"</p>";
+box.innerHTML+="<p>You: "+text+"</p>";
 
 
 
@@ -1039,29 +1064,27 @@ let answer="";
 
 
 
-
 if(q.includes("chatbot")){
 
 
-answer="AI chatbots are assistants that answer customer questions, give support and help businesses communicate automatically.";
+answer="AI chatbots are smart assistants that answer customer questions, provide help and improve communication for businesses.";
 
 }
-
 
 
 else if(q.includes("website")){
 
 
-answer="We create premium websites for companies, shops, restaurants, startups and brands.";
+answer="I create modern websites for restaurants, companies, shops, real estate, fitness businesses and personal brands.";
 
 }
 
 
 
-else if(q.includes("idea") || q.includes("project")){
+else if(q.includes("idea") || q.includes("create")){
 
 
-answer="Great! Click the 'Start Your Project' button and share your idea with us 🚀";
+answer="Great! Click the 'Create My Website' button and send your project idea. I can help you get started 🚀";
 
 }
 
@@ -1070,7 +1093,7 @@ answer="Great! Click the 'Start Your Project' button and share your idea with us
 else if(q.includes("price") || q.includes("cost")){
 
 
-answer="Every project is different. Pricing depends on your website or chatbot requirements.";
+answer="Every project is different. The price depends on your website or chatbot requirements.";
 
 }
 
@@ -1079,7 +1102,7 @@ answer="Every project is different. Pricing depends on your website or chatbot r
 else if(q.includes("hello") || q.includes("hi")){
 
 
-answer="Hello 👋 I'm AIVA. How can I help you today?";
+answer="Hello 👋 I'm AIVA. How can I help with your digital project?";
 
 }
 
@@ -1098,14 +1121,12 @@ answer="I focus only on AI chatbots, websites and digital solutions. Ask me abou
 setTimeout(()=>{
 
 
-box.innerHTML +=
-
-"<p>AIVA: "+answer+"</p>";
+box.innerHTML+="<p>AIVA: "+answer+"</p>";
 
 box.scrollTop=box.scrollHeight;
 
 
-},700);
+},600);
 
 
 
@@ -1115,8 +1136,8 @@ input.value="";
 }
 
 
-
 </script>
+
 
 
 
@@ -1124,7 +1145,7 @@ input.value="";
 
 <footer>
 
-AI Chatbots & Premium Websites © 2026
+AI Chatbots and Premium Websites © 2026
 
 </footer>
 
