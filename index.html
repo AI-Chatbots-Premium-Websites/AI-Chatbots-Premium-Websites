@@ -1,273 +1,576 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>
-AIVA | AI Chatbots & Premium Websites
-</title>
-<meta name="description" content="AIVA creates premium AI chatbots, modern websites and intelligent digital solutions for businesses.">
-<meta name="keywords" content="AI chatbot, premium website, business automation, AI solutions">
-<meta name="author" content="AIVA">
-<link rel="icon" href="favicon.svg">
+
+<title>AIVA - AI Chatbots & Premium Websites</title>
+
+<meta name="description" content="AI Chatbots and premium websites for businesses. Smart AI assistants, modern web design and digital solutions.">
+
+<meta name="keywords" content="AI chatbot, website design, business website, artificial intelligence, premium websites">
+
+<meta name="author" content="AI Chatbots & Premium Websites">
+
 <style>
+
 *{
 margin:0;
 padding:0;
 box-sizing:border-box;
 font-family:Arial, Helvetica, sans-serif;
 }
-html{
-scroll-behavior:smooth;
-}
+
 body{
-background:
-radial-gradient(circle at top,#17120a,#050505 45%);
+
+background:#050505;
 color:#d4af37;
-overflow-x:hidden;
+
 }
-/* ANIMATION */
+
 @keyframes float{
+
 50%{
 transform:translateY(-15px);
 }
+
 }
+
 @keyframes fade{
+
 from{
 opacity:0;
-transform:translateY(50px);
+transform:translateY(40px);
 }
+
 to{
 opacity:1;
 transform:translateY(0);
 }
+
 }
-/* HEADER */
-header{
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-padding:40px;
-animation:fade 1.5s;
-}
-.hero{
-max-width:1300px;
-}
-/* AI LOGO */
+
+/* LOGO */
+
 .logo{
+
 display:flex;
 justify-content:center;
 align-items:center;
-gap:30px;
-margin-bottom:40px;
+gap:25px;
+
 }
+
 .logo-text{
-font-size:110px;
+
+font-size:90px;
 font-weight:900;
-letter-spacing:12px;
-text-shadow:
-0 0 20px #d4af37,
-0 0 50px #d4af37;
+letter-spacing:8px;
+text-shadow:0 0 35px #d4af37;
+
 }
+
 .ai-icon{
-width:130px;
-height:130px;
-border:5px solid #d4af37;
-border-radius:35px;
+
+width:100px;
+height:100px;
+border:4px solid #d4af37;
+border-radius:30px;
 position:relative;
+box-shadow:0 0 40px #d4af37;
 animation:float 3s infinite;
-box-shadow:
-0 0 40px #d4af37;
+
 }
+
 .ai-icon:before{
+
 content:"";
+
 position:absolute;
-top:40px;
-left:30px;
-width:16px;
-height:16px;
+
+top:30px;
+left:22px;
+
+width:14px;
+height:14px;
+
 background:#d4af37;
+
 border-radius:50%;
-box-shadow:
-55px 0 #d4af37;
+
+box-shadow:42px 0 #d4af37;
+
 }
+
 .ai-icon:after{
+
 content:"";
+
 position:absolute;
-bottom:25px;
-left:38px;
-width:45px;
-height:18px;
-border-bottom:5px solid #d4af37;
+
+bottom:20px;
+
+left:30px;
+
+width:35px;
+
+height:15px;
+
+border-bottom:4px solid #d4af37;
+
 border-radius:50%;
+
 }
+
 .ai-icon span{
+
 position:absolute;
-width:10px;
-height:10px;
+
+width:8px;
+height:8px;
+
 background:#d4af37;
+
 border-radius:50%;
+
 }
+
 .ai-icon span:nth-child(1){
-top:-15px;
-left:55px;
+
+top:-12px;
+left:46px;
+
 }
+
 .ai-icon span:nth-child(2){
-left:-15px;
-top:55px;
+
+left:-12px;
+top:45px;
+
 }
+
 .ai-icon span:nth-child(3){
-right:-15px;
-top:55px;
+
+right:-12px;
+top:45px;
+
 }
-h1{
-font-size:65px;
-line-height:1.2;
-margin-bottom:30px;
-}
-.hero p{
-max-width:1100px;
-margin:auto;
-font-size:26px;
-color:#ddd;
-line-height:1.8;
-}
-/* STATS */
-.stats{
+
+/* HERO */
+
+header{
+
+height:100vh;
+
 display:flex;
+
 justify-content:center;
-gap:90px;
-flex-wrap:wrap;
-margin-top:70px;
-}
-.stats h3{
-font-size:60px;
-text-shadow:0 0 25px #d4af37;
-}
-.stats p{
-font-size:20px;
-color:#ccc;
-}
-/* BUTTON */
-.button{
-margin-top:70px;
-display:inline-block;
-padding:22px 70px;
-background:#d4af37;
-color:black;
-border-radius:50px;
-font-weight:bold;
-text-decoration:none;
-cursor:pointer;
-border:none;
-transition:.3s;
-}
-.button:hover{
-background:white;
-transform:scale(1.1);
-}
-/* SECTIONS */
-section{
-max-width:1500px;
-margin:auto;
-padding:150px 50px;
+
+align-items:center;
+
 text-align:center;
+
+padding:20px;
+
+animation:fade 1.5s;
+
 }
-h2{
-font-size:60px;
-margin-bottom:80px;
-text-shadow:0 0 25px #d4af37;
+
+h1{
+
+font-size:55px;
+
+margin-top:35px;
+
 }
-.text{
-max-width:1200px;
-margin:auto;
-font-size:24px;
+
+header p{
+
+font-size:25px;
+
 color:#ddd;
-line-height:2;
+
+margin-top:25px;
+
+line-height:1.5;
+
 }
-/* CARDS */
-.cards{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:50px;
-}
-.card{
-width:420px;
-min-height:330px;
-background:#111;
-border:
-1px solid #d4af37;
-border-radius:35px;
-padding:45px;
-display:flex;
-flex-direction:column;
-justify-content:center;
-transition:.4s;
-}
-.card:hover{
-transform:translateY(-20px);
-box-shadow:0 0 50px #d4af37;
-}
-.card h3{
-font-size:30px;
-margin-bottom:25px;
-}
-.card p{
-font-size:20px;
-color:#ddd;
-line-height:1.8;
-}
-/* SKILLS */
-.skill{
-max-width:900px;
-margin:40px auto;
-text-align:left;
-font-size:22px;
-color:white;
-}
-.bar{
-height:22px;
-background:#222;
-border-radius:20px;
-margin-top:15px;
-}
-.fill{
-height:100%;
+
+.button{
+
+display:inline-block;
+
+margin-top:45px;
+
+padding:18px 55px;
+
 background:#d4af37;
-border-radius:20px;
+
+color:black;
+
+border-radius:50px;
+
+font-weight:bold;
+
+text-decoration:none;
+
+border:none;
+
+cursor:pointer;
+
+transition:.3s;
+
 }
+
+.button:hover{
+
+background:white;
+
+transform:scale(1.1);
+
+}
+
+/* SECTIONS */
+
+section{
+
+padding:90px 20px;
+
+text-align:center;
+
+}
+
+h2{
+
+font-size:45px;
+
+margin-bottom:45px;
+
+}
+
+.text{
+
+max-width:900px;
+
+margin:auto;
+
+color:#ddd;
+
+font-size:20px;
+
+line-height:1.7;
+
+}
+
+.cards{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:30px;
+
+}
+
+.card{
+
+width:320px;
+
+min-height:240px;
+
+background:#111;
+
+border:1px solid #d4af37;
+
+border-radius:25px;
+
+padding:30px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+transition:.4s;
+
+}
+
+.card:hover{
+
+transform:translateY(-15px);
+
+box-shadow:0 0 35px #d4af37;
+
+}
+
+.card p{
+
+margin-top:15px;
+
+color:#ddd;
+
+line-height:1.6;
+
+}
+
+/* SKILLS */
+
+.skill{
+
+max-width:700px;
+
+margin:25px auto;
+
+text-align:left;
+
+color:white;
+
+}
+
+.bar{
+
+height:18px;
+
+background:#222;
+
+border-radius:20px;
+
+margin-top:10px;
+
+}
+
+.fill{
+
+height:100%;
+
+background:#d4af37;
+
+border-radius:20px;
+
+}
+
+/* CHATBOT */
+
+.bot{
+
+position:fixed;
+
+left:25px;
+
+bottom:25px;
+
+cursor:pointer;
+
+animation:float 3s infinite;
+
+}
+
+.chat-logo{
+
+width:70px;
+
+height:70px;
+
+border:3px solid #d4af37;
+
+border-radius:25px;
+
+box-shadow:0 0 30px #d4af37;
+
+position:relative;
+
+}
+
+.chat-logo:before{
+
+content:"";
+
+position:absolute;
+
+top:20px;
+
+left:16px;
+
+width:10px;
+
+height:10px;
+
+background:#d4af37;
+
+border-radius:50%;
+
+box-shadow:28px 0 #d4af37;
+
+}
+
+.chat-logo:after{
+
+content:"";
+
+position:absolute;
+
+bottom:18px;
+
+left:22px;
+
+width:25px;
+
+height:12px;
+
+border-bottom:3px solid #d4af37;
+
+border-radius:50%;
+
+}
+
+.bubble{
+
+position:fixed;
+
+left:100px;
+
+bottom:100px;
+
+background:#d4af37;
+
+color:black;
+
+padding:15px 25px;
+
+border-radius:30px;
+
+}
+
+.chat{
+
+display:none;
+
+position:fixed;
+
+left:25px;
+
+bottom:120px;
+
+width:350px;
+
+background:#111;
+
+border:2px solid #d4af37;
+
+border-radius:25px;
+
+padding:20px;
+
+z-index:10;
+
+}
+
+#messages{
+
+height:250px;
+
+overflow:auto;
+
+}
+
+#messages p{
+
+background:#222;
+
+color:white;
+
+padding:10px;
+
+margin:10px;
+
+border-radius:15px;
+
+}
+
+.chat input{
+
+width:100%;
+
+padding:15px;
+
+background:#111;
+
+border:1px solid #d4af37;
+
+color:white;
+
+}
+
+/* FORM */
+
+form{
+
+max-width:600px;
+
+margin:auto;
+
+display:flex;
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+input,textarea{
+
+padding:18px;
+
+background:#111;
+
+border:1px solid #d4af37;
+
+color:white;
+
+border-radius:15px;
+
+}
+
+textarea{
+
+height:150px;
+
+}
+
+footer{
+
+padding:40px;
+
+text-align:center;
+
+}
+
 </style>
 
 </head>
 
-
 <body>
-
-
 
 <header>
 
-
-<div class="hero">
-
-
+<div>
 
 <div class="logo">
 
-
 <div class="ai-icon">
 
-
 <span></span>
 <span></span>
 <span></span>
-
 
 </div>
-
 
 <div class="logo-text">
 
@@ -275,11 +578,7 @@ AI
 
 </div>
 
-
 </div>
-
-
-
 
 <h1>
 
@@ -287,70 +586,11 @@ AI CHATBOTS & PREMIUM WEBSITES
 
 </h1>
 
-
-
-
 <p>
 
-Building premium digital solutions with artificial intelligence, modern design and smart automation to help businesses grow faster.
+Creating intelligent digital solutions that help businesses grow, automate communication and build a stronger online presence.
 
 </p>
-
-
-
-
-
-<div class="stats">
-
-
-<div>
-
-<h3>
-24/7
-</h3>
-
-<p>
-AI Support
-</p>
-
-</div>
-
-
-
-
-<div>
-
-<h3>
-100%
-</h3>
-
-<p>
-Custom Solutions
-</p>
-
-</div>
-
-
-
-
-<div>
-
-<h3>
-∞
-</h3>
-
-<p>
-Business Growth
-</p>
-
-</div>
-
-
-</div>
-
-
-
-
 
 <a href="#contact" class="button">
 
@@ -358,51 +598,27 @@ Create Your AI Solution
 
 </a>
 
-
-
-
 </div>
-
 
 </header>
 
-
-
-
-
-
-
 <section>
-
 
 <h2>
 
-About AIVA
+About My Work
 
 </h2>
 
-
-
 <p class="text">
 
-
-AIVA creates intelligent digital experiences for companies that want to improve customer communication, automate processes and build a stronger online presence. Combining premium website design with AI technology creates modern solutions that are built for the future.
-
+I create modern AI-powered solutions for businesses that want to improve customer experience and work more efficiently. My focus is combining premium website design with intelligent chatbot technology to create digital experiences that are simple, professional and effective.
 
 </p>
 
-
-
 </section>
 
-
-
-
-
-
-
 <section>
-
 
 <h2>
 
@@ -410,13 +626,9 @@ My Skills
 
 </h2>
 
-
-
 <div class="skill">
 
-
-Premium Website Design
-
+Website Design & Development
 
 <div class="bar">
 
@@ -424,58 +636,11 @@ Premium Website Design
 
 </div>
 
-
 </div>
-
-
-
-
 
 <div class="skill">
 
-
-AI Chatbot Development
-
-
-<div class="bar">
-
-<div class="fill" style="width:92%"></div>
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="skill">
-
-
-Modern UI & User Experience
-
-
-<div class="bar">
-
-<div class="fill" style="width:95%"></div>
-
-</div>
-
-
-</div>
-
-
-
-
-
-
-<div class="skill">
-
-
-Digital Business Solutions
-
+AI Chatbot Creation
 
 <div class="bar">
 
@@ -483,584 +648,159 @@ Digital Business Solutions
 
 </div>
 
+</div>
+
+<div class="skill">
+
+Modern UI & User Experience
+
+<div class="bar">
+
+<div class="fill" style="width:95%"></div>
 
 </div>
 
+</div>
 
+<div class="skill">
+
+Business Digital Solutions
+
+<div class="bar">
+
+<div class="fill" style="width:85%"></div>
+
+</div>
+
+</div>
 
 </section>
-
-
-
-
-
-
 
 <section>
 
-
 <h2>
 
-Services
+My Services
 
 </h2>
 
-
-
 <div class="cards">
 
-
-
-
-
 <div class="card">
-
 
 <h3>
 
-AI Chatbots
+AI Chatbots 🤖
 
 </h3>
 
-
 <p>
 
-Smart assistants that answer customer questions, provide support and help companies communicate automatically 24/7.
+Smart assistants that answer customer questions, support visitors and improve communication.
 
 </p>
 
-
 </div>
-
-
-
-
-
-
 
 <div class="card">
 
-
 <h3>
 
-Premium Websites
+Premium Websites 🌐
 
 </h3>
 
-
 <p>
 
-Modern responsive websites designed to create trust, represent brands and turn visitors into customers.
+Professional websites designed to represent brands and convert visitors into customers.
 
 </p>
 
-
 </div>
-
-
-
-
-
-
 
 <div class="card">
 
-
 <h3>
 
-AI Business Automation
+Complete Solutions 🚀
 
 </h3>
 
-
 <p>
 
-Intelligent digital systems that save time and improve how businesses work.
+Modern digital systems created for companies, startups and personal brands.
 
 </p>
 
-
 </div>
 
-
-
-
 </div>
-
 
 </section>
-
-
-
-
-
-
-
 
 <section>
 
-
 <h2>
 
-Industries I Work With
+Why Choose My Solutions?
 
 </h2>
 
-
-
 <div class="cards">
 
+<div class="card">
 
+<h3>
 
+Modern Technology
 
+</h3>
+
+<p>
+
+Using AI and modern design to create future-ready businesses.
+
+</p>
+
+</div>
 
 <div class="card">
 
 <h3>
 
-Restaurants
+Customer Focus
 
 </h3>
 
-
 <p>
 
-AI customer support, menus, bookings and modern websites.
+Every project is created around the goals and needs of the company.
 
 </p>
 
-
 </div>
-
-
-
-
-
 
 <div class="card">
 
 <h3>
 
-Real Estate
+Professional Quality
 
 </h3>
 
-
 <p>
 
-Professional property platforms and intelligent customer assistants.
+Clean design, strong branding and easy experiences.
 
 </p>
 
-
 </div>
 
-
-
-
-
-
-<div class="card">
-
-<h3>
-
-Fitness & Coaching
-
-</h3>
-
-
-<p>
-
-Digital platforms that support customers and grow brands.
-
-</p>
-
-
 </div>
-
-
-
-
-
-
-<div class="card">
-
-<h3>
-
-E-Commerce
-
-</h3>
-
-
-<p>
-
-Online experiences that improve customer interaction.
-
-</p>
-
-
-</div>
-
-
-
-
-
-
-<div class="card">
-
-<h3>
-
-Startups
-
-</h3>
-
-
-<p>
-
-Strong digital foundations for new companies.
-
-</p>
-
-
-</div>
-
-
-
-
-
-
-<div class="card">
-
-<h3>
-
-Any Company
-
-</h3>
-
-
-<p>
-
-Custom AI and website solutions for every type of business.
-
-</p>
-
-
-</div>
-
-
-
-
-</div>
-
-
 
 </section>
-
-
-
-
-
-
-
-
-
-<section>
-
-
-<h2>
-
-Why Choose AIVA?
-
-</h2>
-
-
-
-
-<div class="cards">
-
-
-
-
-
-<div class="card">
-
-<h3>
-
-Future Technology
-
-</h3>
-
-
-<p>
-
-Using artificial intelligence and modern development to create future-ready solutions.
-
-</p>
-
-
-</div>
-
-
-
-
-
-
-<div class="card">
-
-<h3>
-
-Custom Made
-
-</h3>
-
-
-<p>
-
-Every project is created around the goals and needs of each company.
-
-</p>
-
-
-</div>
-
-
-
-
-
-
-<div class="card">
-
-<h3>
-
-Premium Quality
-
-</h3>
-
-
-<p>
-
-Professional design, smooth experiences and strong digital presence.
-
-</p>
-
-
-</div>
-
-
-
-
-</div>
-
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<section>
-
-
-<h2>
-
-How It Works
-
-</h2>
-
-
-
-
-<div class="cards">
-
-
-
-
-
-<div class="card">
-
-<h3>
-
-1. Your Idea
-
-</h3>
-
-
-<p>
-
-You explain your business, goals and what you want to achieve.
-
-</p>
-
-
-</div>
-
-
-
-
-
-
-<div class="card">
-
-<h3>
-
-2. Creation
-
-</h3>
-
-
-<p>
-
-The website or AI assistant is designed and built.
-
-</p>
-
-
-</div>
-
-
-
-
-
-
-<div class="card">
-
-<h3>
-
-3. Launch
-
-</h3>
-
-
-<p>
-
-Your digital solution goes online and supports your business.
-
-</p>
-
-
-</div>
-
-
-
-
-</div>
-
-
-
-</section>
-
-
-
-
-
-
-
-
-
-<section>
-
-
-<h2>
-
-Frequently Asked Questions
-
-</h2>
-
-
-
-
-<div class="cards">
-
-
-
-
-
-<div class="card">
-
-<h3>
-
-What does an AI chatbot do?
-
-</h3>
-
-
-<p>
-
-It answers customer questions, provides information and supports visitors automatically.
-
-</p>
-
-
-</div>
-
-
-
-
-
-
-<div class="card">
-
-<h3>
-
-Can you create websites for any business?
-
-</h3>
-
-
-<p>
-
-Yes. Every solution can be adapted for different industries.
-
-</p>
-
-
-</div>
-
-
-
-
-
-
-<div class="card">
-
-<h3>
-
-Are projects customized?
-
-</h3>
-
-
-<p>
-
-Every website and chatbot is built based on the company's requirements.
-
-</p>
-
-
-</div>
-
-
-
-
-</div>
-
-
-
-</section>
-
-
-
-
-
-
 
 <section id="contact">
-
 
 <h2>
 
@@ -1068,40 +808,13 @@ Start Your Project
 
 </h2>
 
-
-
-
-
 <form action="https://formspree.io/f/mgobgzye" method="POST">
 
+<input name="name" placeholder="Your Name">
 
+<input name="email" placeholder="Your Email">
 
-<input
-name="name"
-placeholder="Your Name"
-required>
-
-
-
-<input
-name="email"
-placeholder="Your Email"
-required>
-
-
-
-
-
-<textarea
-name="request"
-placeholder="Tell me about your project"
-required>
-
-</textarea>
-
-
-
-
+<textarea name="request" placeholder="Tell me about your project"></textarea>
 
 <button class="button">
 
@@ -1109,47 +822,23 @@ Send Request
 
 </button>
 
-
-
-
 </form>
 
-
-
 </section>
-<!-- AIVA AI ASSISTANT -->
-
-
 
 <div class="bubble">
 
-Ask AIVA About AI & Websites
+Ask AIVA 🤖
 
 </div>
-
-
-
-
 
 <div class="bot" onclick="openAI()">
 
-
-
 <div class="chat-logo"></div>
-
-
 
 </div>
 
-
-
-
-
-
-
 <div class="chat" id="chat">
-
-
 
 <h3>
 
@@ -1157,38 +846,17 @@ AIVA AI Assistant
 
 </h3>
 
-
-
-
-
 <div id="messages">
-
-
 
 <p>
 
-AIVA: Hello 👋 I am AIVA. I can help you with AI chatbots, websites and digital solutions.
+AIVA: Hello 👋 I help with AI chatbots, websites and digital solutions.
 
 </p>
 
-
-
 </div>
 
-
-
-
-
-<input 
-
-id="input"
-
-placeholder="Ask about AI, websites or projects...">
-
-
-
-
-
+<input id="input" placeholder="Ask me...">
 
 <button class="button" onclick="send()">
 
@@ -1196,258 +864,76 @@ Send
 
 </button>
 
-
-
-
-
-
 </div>
-
-
-
-
-
-
-
 
 <script>
 
-
-
-
-
 function openAI(){
-
 
 document.getElementById("chat").style.display="block";
 
-
 }
-
-
-
-
-
-
-
-
 
 function send(){
 
+let input=document.getElementById("input");
 
+let q=input.value.toLowerCase();
 
-let input = document.getElementById("input");
+let box=document.getElementById("messages");
 
-let question = input.value.toLowerCase();
+box.innerHTML += "<p>You: "+input.value+"</p>";
 
+let answer="";
 
+if(q.includes("chatbot")){
 
-let messages = document.getElementById("messages");
-
-
-
-
-
-messages.innerHTML +=
-
-"<p>You: " + input.value + "</p>";
-
-
-
-
-
-
-
-let answer = "";
-
-
-
-
-
-
-
-if(question.includes("chatbot")){
-
-
-answer =
-
-"AI chatbots help businesses by answering customer questions, providing support and automating communication 24/7.";
+answer="AI chatbots help businesses answer customers, automate support and improve communication.";
 
 }
 
+else if(q.includes("website")){
 
-
-
-
-else if(question.includes("website")){
-
-
-answer =
-
-"AIVA creates premium websites with modern design, strong branding and a professional user experience.";
+answer="We create premium websites for companies, brands and businesses.";
 
 }
 
+else if(q.includes("price")){
 
-
-
-
-
-
-else if(question.includes("price") || question.includes("cost")){
-
-
-answer =
-
-"Every project is unique. Use the Start Your Project form to describe your idea and receive a custom solution.";
+answer="Every project is unique. Send your idea through the project form.";
 
 }
 
+else if(q.includes("company")){
 
-
-
-
-
-else if(question.includes("create") || question.includes("project") || question.includes("start")){
-
-
-answer =
-
-"You can start your project by filling out the contact form. Tell us about your business and your goals.";
+answer="Our solutions are made for restaurants, shops, startups, coaches and many businesses.";
 
 }
-
-
-
-
-
-
-
-else if(question.includes("business") || question.includes("company")){
-
-
-answer =
-
-"AIVA creates solutions for restaurants, startups, real estate, fitness, online stores and many other businesses.";
-
-}
-
-
-
-
-
-
-
-else if(question.includes("help") || question.includes("support")){
-
-
-answer =
-
-"I can explain AI chatbots, premium websites and digital solutions. Ask me anything about these topics.";
-
-}
-
-
-
-
-
-
-
-else if(question.includes("aiva")){
-
-
-answer =
-
-"AIVA is focused on creating intelligent websites and AI assistants that help businesses grow.";
-
-}
-
-
-
-
-
-
 
 else{
 
-
-answer =
-
-"I specialize only in AI chatbots, premium websites and digital business solutions. Ask me about these services.";
+answer="I focus only on AI chatbots, websites and digital solutions.";
 
 }
 
+setTimeout(()=>{
 
-
-
-
-
-
-
-setTimeout(function(){
-
-
-
-messages.innerHTML +=
-
-"<p>AIVA: " + answer + "</p>";
-
-
-
-messages.scrollTop = messages.scrollHeight;
-
-
+box.innerHTML += "<p>AIVA: "+answer+"</p>";
 
 },600);
 
-
-
-
-
-
 input.value="";
-
-
 
 }
 
-
-
-
-
-
-
 </script>
-
-
-
-
-
-
 
 <footer>
 
-
-
-AIVA - AI Chatbots & Premium Websites © 2026
-
-
-<br><br>
-
-
-Intelligent Digital Solutions For Modern Businesses
-
-
+AI Chatbots & Premium Websites © 2026
 
 </footer>
 
-
-
-
-
-
-
 </body>
-
 
 </html>
